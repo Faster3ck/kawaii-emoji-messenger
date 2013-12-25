@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>res/home.png</file>
+        <file>res/message.png</file>
+        <file>res/notifications.png</file>
+        <file>res/tray_iconj.png</file>
+        <file>res/smile.png</file>
+    </qresource>
+    <qresource prefix="/ico">
+        <file>res/kawaii-emoji-messenger.png</file>
+    </qresource>
+    <qresource prefix="/other">
+        <file>res/btn_donateCC_LG.gif</file>
+    </qresource>
+</RCC>

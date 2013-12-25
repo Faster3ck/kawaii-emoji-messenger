@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Kawaii Emoji Messenger
+GenericName=Kawaii Emoji Messenger
+GenericName[en_GB]=Kawaii Emoji Messenger
+GenericName[it]=Kawaii Emoji Messenger
+GenericName[ru]=Kawaii Emoji Messenger
+GenericName[ro]=Kawaii Emoji Messenger
+Comment=Kawaii Emoji Messenger: take me emoji on desktop!
+Comment[it]=Kawaii Emoji Messenger: portami le emoji sul desktop! 
+Exec=kawaii-emoji-messenger
+Icon=kawaii-emoji-messenger
+Terminal=false
+Type=Application
+Categories=Qt;Network;InstantMessaging;

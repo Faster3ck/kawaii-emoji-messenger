@@ -1,0 +1,199 @@
+﻿;Animals = 236
+🐱 = Cat = 142
+🐶 = Hamster = 138
+🐺 = Wolves = 237
+🐭 = Rat male = 146
+🐹 = Rat female = 238
+🐰 = Rabbit = 143
+🐸 = Frog = 127
+🐯 = Tiger = 153
+🐨 = Koala = 150
+🐻 = Bear = 236
+🐷 = Pig = 203
+🐮 = Bull = 145
+🐗 = Heifer = 136
+🐵 = Head monkey = 139
+🐒 = Monkey = 129
+🐴 = Head horse = 140
+🐎 = Horse = 131
+🐑 = Sheep = 130
+🐘 = Elephant = 126
+🐧 = Penguin = 113
+🐦 = Blue bird = 152
+🐥 = Chick = 144
+🐔 = Chicken = 128
+🐍 = Snake = 132
+🐛 = Caterpillar = 123
+🐙 = Octopus = 125
+🐚 = Shell = 124
+🐠 = Goldfish = 121
+🐟 = Fish bubbles medium = 122
+🐬 = Dolphin = 147
+🐳 = Whale = 141
+🐡 = Big fish bubble = 120
+🐫 = Camel = 148
+🐩 = Dog = 149
+;Food = 007
+☕ = Coffee = 007
+🍺 = Beer = 181
+🍸 = Martini = 182
+🍔 = Hamburger = 183
+;Plants = 163
+🍎 = Apple = 185
+🍊 = Orange = 186
+🍓 = Strawberry = 184
+💐 = Flowers = 191
+🌷 = Purple flower = 162
+🍀 = Four-leaved clover = 156
+🌹 = Rose = 160
+🌻 = Sunflower = 158
+🌸 = Red flower 1 = 170
+🌺 = Red flower 2 = 159
+🍁 = Autumn leaves = 155
+🍃 = Small leaf fertile = 178
+🍂 = Small leaves withered = 154
+🌾 = Rice = 157
+🌵 = Cactus = 163
+🌴 = Palm = 164
+🌱 = Small plant = 165
+🎐 = Mushroom = 171
+;Sky Objects = 167
+🌙 = Moon = 167
+☀ = Sun = 010
+☁ = Cloud = 009
+⚡ = Lightning = 091
+☔ = Umbrella / Rain = 008
+⛄ = Snowman = 092
+🌀 = Whirl = 137
+🌊 = Wave = 168
+🔥 = Fire = 035
+✨ = Blinking = 096
+🌟 = Star = 166
+💢 = Hit = 214
+💦 = Water / Rain = 212
+💤 = Sleep / Sleepy = 222
+💨 = Run away = 211
+;Items = 114
+🐾 = Footprints = 235
+💩 = Shit = 114
+🌂 = Umbrella = 169
+🎍 = Bamboo = 174
+🎎 = Japanese couple = 173
+🎓 = Bachelor = 161
+🎏 = Japanese fishes = 172
+🎃 = Pumpkin = 179
+👻 = Ghost = 202
+🎅 = Santa Claus = 177
+🎄 = Christmas tree = 187
+🎁 = Gift = 180
+🎉 = Party trumpet = 175
+🎈 = Balloon = 176
+💿 = Silver DVD = 205
+📀 = Golden DVD = 097
+💽 = DVD with wrap = 207
+💾 = Floppy disk = 206
+💻 = Personal computer (PC) = 208
+📱 = iPhone = 031
+📞 = Phone = 029
+📠 = Printer = 030
+📺 = Monitor = 033
+🔔 = Bell = 034
+📲 = iPhone (inbox) = 032
+🎵 = Musical note 1 = 135
+🎼 = Musical note 2 = 133
+;Feelings People = 041
+😄 = Happy Once = 039
+😃 / 😺 = Happy = 020 / 038
+☺ = Smile = 090
+😋 = Smile = 042
+😉 = Wink = 041
+😍 = Fell in love = 019
+😘 = Kiss with wink and heart = 028
+😚 = Cute = 051
+😜 = Wink with tongue = 052
+😝 = Tongue = 053
+😁 = Laugh = 018
+😷 = Feeling bad = 023
+😌 = Feeling relieved = 040
+😒 = Feeling tired = 046
+😔 = Feeling sorry = 003
+😪 = Feeling really sad = 002
+😏 = Feeling OK = 045
+😂 = Crying for laughing = 021
+😳 = Embarrassed = 025
+😲 = Really shocked = 026
+😱 = Oh my God = 017
+😣 = Confused = 001
+😓 = Really confused = 047
+😨 = Shocked = 004
+😰 = Feeling worried = 006
+😥 = Worried = 005
+😞 = Feeling glum = 054
+😠 = Angry = 055
+😖 = Scared = 049
+😢 = Feeling sad = 016
+😭 = Crying = 000
+😡 = Male angry = 056
+👿 = Female angry = 198
+💀 = Skull = 197
+;People Faces = 252
+👽 = Alien head = 200
+👾 = Alien = 199
+👲 = Chinese guy = 244
+👳 = Indian guy = 243
+👮 = Policeman = 256
+👷 = Builder = 195
+💂 = Royal English guard = 196
+👶 = Infant Male = 240
+👯 = Baby Girl = 246
+👦 = Boy = 252
+👧 = Girl = 251
+👨 = Father = 250
+👩 = Mother = 249
+👴 = Grandfather = 242
+👵 = Grandmother = 241
+👱 = Daughter = 245
+👼 = Angel = 201
+👸 = Queen = 223
+💃 = Dancing = 204
+👫 = Acquaintance = 248
+💏 = Kiss each other = 192
+💑 = Couple = 190
+;Human Body Parts = 230
+👍 = Like = 230
+👎 = Do not like = 255
+👌 = Ok = 247
+👊 = Fist = 225
+✊ = Champion / Stone = 093
+✌ = Peace / Scissors = 095
+✋ = Halt / Paper = 094
+👋 = Bye bye = 224
+🙌 = Stop = 013
+👐 = Bird made of hands = 253
+👆 = Point Top = 229
+👇 = Point Bottom = 228
+👉 = Point Right = 226
+👈 = Point Left = 227
+🙏 = Point finger / One = 011
+☝ = High five = 043
+👏 = Applause = 254
+💪 = Muscles = 209
+👂 = Ear = 233
+👀 = Eyes = 234
+👃 = Nose = 232
+👄 = Lips = 231
+💋 = Lips imprint = 193
+💅 = Nails = 194
+;Heart / Love = 213
+💝 = Heart gifts = 215
+💛 = Yellow heart = 217
+💙 = Blue heart = 219
+💜 = Purple heart = 216
+💚 = Green heart = 218
+♥ = Small red heart = 109
+❤ = Big red heart = 074
+💔 = Broken heart = 188
+💗 = Many hearts = 221
+💓 = Quivering heart = 189
+💖 = Heart with stars = 213
+💘 = Heart with arrow = 220
