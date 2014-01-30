@@ -92,6 +92,7 @@ private slots:
     void on_actionToolsSettings_triggered();
     void on_actionHelpAbout_triggered();
     void on_actionHelpDonate_triggered();
+    void on_actionBugReport_triggered();
 };
 
 #endif // MAINWINDOW_H

@@ -316,3 +316,8 @@ void MainWindow::on_actionHelpDonate_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BPS56LV66S6JS"));
 }
+
+void MainWindow::on_actionBugReport_triggered()
+{
+    QDesktopServices::openUrl(QUrl("https://github.com/Faster3ck/kawaii-emoji-messenger/issues"));
+}

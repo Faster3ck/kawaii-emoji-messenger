@@ -29,8 +29,8 @@
 namespace globals
 {
     const QString PROGRAM_NAME = "Kawaii Emoji Messenger";
-    const int CURRENT_INTERNAL_VERSION = 1;
-    const QString VERSION = "0.1_beta_1";
+    const int CURRENT_INTERNAL_VERSION = 200;
+    const QString VERSION = "0.2_beta_1";
 }
 
 #endif // GLOBALS_H

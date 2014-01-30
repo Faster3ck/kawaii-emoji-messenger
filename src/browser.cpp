@@ -23,6 +23,7 @@
 
 #include <QDir>
 #include <QDesktopServices>
+#include <QDebug>
 #include "browser.h"
 
 Browser::Browser(QWidget *parent, QString configPath) : QWebView(parent)
@@ -35,8 +36,8 @@ Browser::Browser(QWidget *parent, QString configPath) : QWebView(parent)
     m_tableMessageTypes.insert("composerInput.input._52t1", CHAT);
     m_tableMessageTypes.insert("composerInput.composerInput.mentions-input", COMMENT);
 
-    /*for (int i = 1; i <= 10; i++)
-        m_tableMessageTypes.insert(QString("uniqid_%1.composerInput.mentions-input").arg(QString::number(i)), STATUS);*/
+    for (int i = 1; i <= 10; i++)
+        m_tableMessageTypes.insert(QString("uniqid_%1.composerInput.mentions-input").arg(QString::number(i)), STATUS);
 
     connect(this, SIGNAL(linkClicked(QUrl)),this,SLOT(openExternalLink(QUrl)));
     connect(page()->networkAccessManager(), SIGNAL( sslErrors( QNetworkReply*, const QList<QSslError> & ) ), this, SLOT( sslErrorHandler( QNetworkReply*, const QList<QSslError> & ) ) );
@@ -142,7 +143,7 @@ bool Browser::isEditableTaxtareaFocused()
                 QString textareaUID = paraElement.attribute("id") + "." + paraElement.attribute("class").replace(" ", ".");
                 //qDebug() << "id+class: " << textareaUID;
                 //qDebug() << "xml: " << paraElement.toOuterXml();
-                paraElement.setAttribute("style", "display:none;");
+                //paraElement.setAttribute("style", "display:none;");
 
                 if (m_tableMessageTypes.contains(textareaUID)) {
                     m_messageType = m_tableMessageTypes[textareaUID];
@@ -180,12 +181,12 @@ QWebElement Browser::getSendButton()
     case COMMENT:   // Comment button
         sendBtn = findButtonByValue("submit", "post");
         break;
-    /*case STATUS:    // Post button
+    case STATUS:    // Post button
         sendBtn = findButtonByValue("submit", "");
-        break;*/
+        break;
     }
 
-    sendBtn.setAttribute("style", "display:none;");
+    //sendBtn.setAttribute("style", "display:none;");
 
     return sendBtn;
 }
@@ -218,18 +219,49 @@ QWebElement Browser::findButtonByValue(QString type, QString name)
 void Browser::setTextAreaContent(QString text)
 {
     // Set the text to sent
-    m_textArea.setPlainText(text);
+
+    /*if (m_messageType == STATUS) {
+        QWebFrame *frame = page()->currentFrame();
+
+        if (frame != NULL)
+        {
+            QWebElement document = frame->documentElement();
+            QWebElementCollection collection = document.findAll("input");
+
+            foreach (QWebElement paraElement, collection) {
+                //qDebug() << "Elemento in lista: " << paraElement.toOuterXml();
+                if (paraElement.attribute("name") == "message") {
+                    paraElement.setAttribute("value", text);
+
+                    qDebug() << "Elemento status: " << paraElement.attribute("name");
+                    qDebug() << "Elemento in lista: " << paraElement.toOuterXml();
+
+                    break;
+                }
+            }
+        }
+    }
+    else
+        m_textArea.setPlainText(text);*/
+
+    m_textArea.evaluateJavaScript("this.value = '" + text + "';");
+    sendBtn.evaluateJavaScript("this.click();");
+    //m_textArea.evaluateJavaScript("var evObj = document.createEvent('KeyboardEvent');evObj.initEvent('keypress', true, true, window, 0, 0, 0, 0, 0, 'e'.charCodeAt(0));this.dispatchEvent(evObj);");
+    //m_textArea.evaluateJavaScript("var e = document.createEvent('KeyboardEvent');e.initKeyboardEvent('keydown', true, true, document.defaultView, 'Enter', 0, '', false, '');this.dispatchEvent(e);");
+
+    clickSendButtonStatus();
+    QTimer::singleShot(2000, this, SLOT(clickSendButtonStatus()));
 
     // Click the the send button
-    sendBtn.evaluateJavaScript("var evObj = document.createEvent('MouseEvents');evObj.initEvent( 'click', true, true );this.dispatchEvent(evObj);");
+    //sendBtn.evaluateJavaScript("var evObj = document.createEvent('MouseEvents');evObj.initEvent( 'click', true, true );this.dispatchEvent(evObj);");
 
     emit clearTextEditChat();
 
     //m_textArea.setPlainText("");
 
     // Re-click on comments (fixes a sort of bug)
-    if (m_messageType == COMMENT)
-        QTimer::singleShot(2000, this, SLOT(clickSendButton()));
+    //if (m_messageType == COMMENT)
+        //QTimer::singleShot(2000, this, SLOT(clickSendButton()));
 }
 
 void Browser::gotoPage(Browser::FbPage page)
@@ -260,6 +292,12 @@ void Browser::clickSendButton()
 {
     m_textArea.setPlainText("");
 
+    sendBtn.evaluateJavaScript("var evObj = document.createEvent('MouseEvents');evObj.initEvent( 'click', true, true );this.dispatchEvent(evObj);");
+}
+
+void Browser::clickSendButtonStatus()
+{
+    qDebug() << "Button: " << sendBtn.toOuterXml();
     sendBtn.evaluateJavaScript("var evObj = document.createEvent('MouseEvents');evObj.initEvent( 'click', true, true );this.dispatchEvent(evObj);");
 }
 

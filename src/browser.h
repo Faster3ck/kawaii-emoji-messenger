@@ -56,8 +56,8 @@ private:
     /* Types of messages */
     enum FbMessageType {
         CHAT,
-        COMMENT
-        //STATUS
+        COMMENT,
+        STATUS
     };
 
     void setupBrowser();
@@ -87,6 +87,7 @@ private slots:
     void showTextEditor();
     void sslErrorHandler( QNetworkReply *reply, const QList<QSslError> &errors );
     void clickSendButton();
+    void clickSendButtonStatus();
     void openExternalLink(QUrl url);
 };
 

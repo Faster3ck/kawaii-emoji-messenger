@@ -60,6 +60,8 @@
      <string>&amp;Help</string>
     </property>
     <addaction name="actionHelpDonate"/>
+    <addaction name="actionBugReport"/>
+    <addaction name="separator"/>
     <addaction name="actionHelpAbout"/>
    </widget>
    <widget class="QMenu" name="menu_Tools">
@@ -302,6 +304,11 @@
   <action name="actionShowHideWindow">
    <property name="text">
     <string>Hide</string>
+   </property>
+  </action>
+  <action name="actionBugReport">
+   <property name="text">
+    <string>Report a bug...</string>
    </property>
   </action>
  </widget>
