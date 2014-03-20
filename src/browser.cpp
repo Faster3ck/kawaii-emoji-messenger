@@ -32,7 +32,8 @@ Browser::Browser(QWidget *parent, QString configPath) : QWebView(parent)
 
     page()->setLinkDelegationPolicy(QWebPage::DelegateAllLinks);
 
-    m_tableMessageTypes.insert("composerInput.input._52t1", CHAT);
+    /* When Facebook makes changes you could change these values */
+    m_tableMessageTypes.insert("composerInput._5whq.input._52t1", CHAT);
     m_tableMessageTypes.insert("composerInput.composerInput.mentions-input", COMMENT);
 
     /*for (int i = 1; i <= 10; i++)

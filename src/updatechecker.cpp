@@ -27,7 +27,7 @@
 
 #include "globals.h"
 
-#define VERSION_URL "http://fasterindesign.altervista.org/software-updates/kem-version.txt"
+#define VERSION_URL "http://fasterland.net/software-updates/kem-version.txt"
 #define DESTINATION_URL "http://kawaii-emoji-messenger.sourceforge.net/download"
 
 UpdateChecker::UpdateChecker(QObject *parent) :
